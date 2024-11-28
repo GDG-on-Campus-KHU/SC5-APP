@@ -6,7 +6,7 @@ import (
     "io"
     "log"
     "net"
-    pb "fire-detection/pb"
+    pb "github.com/Imsyp/SC5-APP/proto"
     "google.golang.org/grpc"
     "time"
 )
