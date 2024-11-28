@@ -1,0 +1,23 @@
+// proto/fire_detection.proto
+syntax = "proto3";
+
+package firedetection;
+
+option go_package = "./pb";
+option swift_prefix = "FD";
+
+service FireDetectionService {
+    rpc StreamVideo(stream VideoChunk) returns (stream VideoResponse);
+}
+
+message VideoChunk {
+    bytes data = 1;
+    int64 timestamp = 2;
+    bool is_last = 3;  // 마지막 청크 여부
+}
+
+message VideoResponse {
+    bool detected = 1;
+    string message = 2;
+    int64 timestamp = 3;
+}
