@@ -9,16 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-       
-       
         VStack(spacing: 0) {
             // 상단 도형
             Color.teal // 상단 배경색
                 .frame(height: 70)
                 .ignoresSafeArea(edges: .top)
         }
-        
-        
         
         TabView {
             // Left Tab: 기록
@@ -44,7 +40,6 @@ struct ContentView: View {
         }
     }
 }
-
 
     // MARK: - Camera List View
 struct CameraListView: View {
@@ -79,7 +74,6 @@ struct CameraListView: View {
                             .font(.title3)
                     }
                 }
-                
                 
                 Button(action: {
                     // CCTV 추가 버튼 동작
