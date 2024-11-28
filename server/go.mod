@@ -1,4 +1,4 @@
-module github.com/Imsyp/SC5-APP
+module github.com/GDG-on-Campus-KHU/SC5-APP
 
 go 1.23.1
 
