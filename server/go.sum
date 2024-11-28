@@ -1,3 +1,5 @@
+github.com/GDG-on-Campus-KHU/SC5-APP v0.0.0-20241128040956-0fc2275cd393 h1:dGP0nTBTYRhtHqEA62Xuvb7asx3h/BapTl9UXaKyKj0=
+github.com/GDG-on-Campus-KHU/SC5-APP v0.0.0-20241128040956-0fc2275cd393/go.mod h1:JESfdkhJ49yLIpb806qeZXLcFXoBhmgQ6VAQM1YZ5fg=
 github.com/golang/protobuf v1.5.4 h1:i7eJL8qZTpSEXOPTxNKhASYpMn+8e5Q6AdndVa1dWek=
 github.com/golang/protobuf v1.5.4/go.mod h1:lnTiLA8Wa4RWRcIUkrtSVa5nRhsEGBg48fD6rSs7xps=
 github.com/google/go-cmp v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XBFqE1GSq7atu8tAmTRI=

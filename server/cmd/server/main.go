@@ -2,66 +2,67 @@
 package main
 
 import (
-    "fmt"
-    "io"
-    "log"
-    "net"
-    pb "github.com/Imsyp/SC5-APP/proto"
-    "google.golang.org/grpc"
-    "time"
+	"fmt"
+	"io"
+	"log"
+	"net"
+	"time"
+
+	pb "github.com/GDG-on-Campus-KHU/SC5-APP/proto"
+	"google.golang.org/grpc"
 )
 
 type server struct {
-    pb.UnimplementedFireDetectionServiceServer
+	pb.UnimplementedFireDetectionServiceServer
 }
 
 func (s *server) StreamVideo(stream pb.FireDetectionService_StreamVideoServer) error {
-    log.Println("Started new video stream")
-    
-    for {
-        chunk, err := stream.Recv()
-        if err == io.EOF {
-            return nil
-        }
-        if err != nil {
-            return fmt.Errorf("error receiving chunk: %v", err)
-        }
+	log.Println("Started new video stream")
 
-        // 청크 수신 로그
-        log.Printf("Received chunk of size %d bytes at timestamp %v", 
-            len(chunk.Data), chunk.Timestamp)
+	for {
+		chunk, err := stream.Recv()
+		if err == io.EOF {
+			return nil
+		}
+		if err != nil {
+			return fmt.Errorf("error receiving chunk: %v", err)
+		}
 
-        // 더미 화재 감지 처리 (실제로는 여기서 AI 모델 처리)
-        response := &pb.VideoResponse{
-            Detected:  false,
-            Message:   "Processing video chunk...",
-            Timestamp: time.Now().UnixNano() / int64(time.Millisecond),
-        }
+		// 청크 수신 로그
+		log.Printf("Received chunk of size %d bytes at timestamp %v",
+			len(chunk.Data), chunk.Timestamp)
 
-        if err := stream.Send(response); err != nil {
-            return fmt.Errorf("error sending response: %v", err)
-        }
+		// 더미 화재 감지 처리 (실제로는 여기서 AI 모델 처리)
+		response := &pb.VideoResponse{
+			Detected:  false,
+			Message:   "Processing video chunk...",
+			Timestamp: time.Now().UnixNano() / int64(time.Millisecond),
+		}
 
-        if chunk.IsLast {
-            log.Println("Received last chunk, stream complete")
-            break
-        }
-    }
+		if err := stream.Send(response); err != nil {
+			return fmt.Errorf("error sending response: %v", err)
+		}
 
-    return nil
+		if chunk.IsLast {
+			log.Println("Received last chunk, stream complete")
+			break
+		}
+	}
+
+	return nil
 }
 
 func main() {
-    lis, err := net.Listen("tcp", ":50051")
-    if err != nil {
-        log.Fatalf("failed to listen: %v", err)
-    }
+	lis, err := net.Listen("tcp", ":50051")
+	if err != nil {
+		log.Fatalf("failed to listen: %v", err)
+	}
 
-    s := grpc.NewServer()
-    pb.RegisterFireDetectionServiceServer(s, &server{})
+	s := grpc.NewServer()
+	pb.RegisterFireDetectionServiceServer(s, &server{})
 
-    log.Printf("Server listening at %v", lis.Addr())
-    if err := s.Serve(lis); err != nil {
-        log.Fatalf("failed to serve: %v", err)
-    }
+	log.Printf("Server listening at %v", lis.Addr())
+	if err := s.Serve(lis); err != nil {
+		log.Fatalf("failed to serve: %v", err)
+	}
 }
