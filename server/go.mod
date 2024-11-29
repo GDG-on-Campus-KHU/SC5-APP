@@ -3,6 +3,7 @@ module github.com/GDG-on-Campus-KHU/SC5-APP
 go 1.23.1
 
 require (
+	gocv.io/x/gocv v0.39.0
 	google.golang.org/grpc v1.68.0
 	google.golang.org/protobuf v1.35.2
 )
