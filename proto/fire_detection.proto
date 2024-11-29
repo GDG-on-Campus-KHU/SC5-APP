@@ -13,9 +13,6 @@ service FireDetectionService {
 message VideoChunk {
     bytes data = 1;
     int64 timestamp = 2;
-    int32 frame_id = 3;     // 프레임 식별자
-    int32 chunk_index = 4;  // 청크 순서
-    int32 total_chunks = 5; // 프레임당 총 청크 수
     bool is_last = 6;
 }
 
