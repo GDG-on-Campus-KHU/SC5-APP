@@ -47,7 +47,7 @@ struct CameraListView: View {
         ("거실", "livingroom"), // 이미지 파일명
         ("안방", "bedroom")    // 이미지 파일명
     ]
-    
+   
     var body: some View {
         NavigationView {
             VStack {
