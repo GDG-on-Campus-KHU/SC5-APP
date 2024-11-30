@@ -17,7 +17,7 @@
 		91B8B0312CF83D9200365904 /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B8B0302CF83D9200365904 /* ConnectView.swift */; };
 		91B8B0352CF8454F00365904 /* fire_detection.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B8B0322CF8454F00365904 /* fire_detection.grpc.swift */; };
 		91B8B0362CF8454F00365904 /* fire_detection.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B8B0332CF8454F00365904 /* fire_detection.pb.swift */; };
-		91B8B03B2CF85D5400365904 /* sample.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 91B8B03A2CF85D5400365904 /* sample.mp4 */; };
+		D611221B2CFAB0AF0040AD8C /* sample.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D611221A2CFAB0AF0040AD8C /* sample.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		91B8B0302CF83D9200365904 /* ConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectView.swift; sourceTree = "<group>"; };
 		91B8B0322CF8454F00365904 /* fire_detection.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fire_detection.grpc.swift; sourceTree = "<group>"; };
 		91B8B0332CF8454F00365904 /* fire_detection.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fire_detection.pb.swift; sourceTree = "<group>"; };
-		91B8B03A2CF85D5400365904 /* sample.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.mp4; sourceTree = "<group>"; };
+		D611221A2CFAB0AF0040AD8C /* sample.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 				91B291212CF81CD60035D87D /* ContentView.swift */,
 				91B8B0302CF83D9200365904 /* ConnectView.swift */,
 				91B291232CF81CD80035D87D /* Assets.xcassets */,
-				91B8B03A2CF85D5400365904 /* sample.mp4 */,
+				D611221A2CFAB0AF0040AD8C /* sample.mp4 */,
 				91B291252CF81CD80035D87D /* Preview Content */,
 			);
 			path = HomeCamProject;
@@ -161,7 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91B291272CF81CD80035D87D /* Preview Assets.xcassets in Resources */,
-				91B8B03B2CF85D5400365904 /* sample.mp4 in Resources */,
+				D611221B2CFAB0AF0040AD8C /* sample.mp4 in Resources */,
 				91B291242CF81CD80035D87D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
