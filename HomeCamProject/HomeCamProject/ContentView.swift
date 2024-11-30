@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import GRPC
 
 struct ContentView: View {
     var body: some View {
@@ -68,7 +67,7 @@ struct CameraListView: View {
                         .padding(.vertical, 8)
                     }
                 }
-                .navigationTitle("홈캠")
+                .navigationTitle("Home Cam")
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Image(systemName: "line.3.horizontal")
