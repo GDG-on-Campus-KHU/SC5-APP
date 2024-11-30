@@ -18,6 +18,7 @@
 		91B8B0352CF8454F00365904 /* fire_detection.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B8B0322CF8454F00365904 /* fire_detection.grpc.swift */; };
 		91B8B0362CF8454F00365904 /* fire_detection.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B8B0332CF8454F00365904 /* fire_detection.pb.swift */; };
 		91B8B03B2CF85D5400365904 /* sample.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 91B8B03A2CF85D5400365904 /* sample.mp4 */; };
+		D61122132CFA9BE20040AD8C /* VideoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61122122CFA9BE20040AD8C /* VideoContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		91B8B0322CF8454F00365904 /* fire_detection.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fire_detection.grpc.swift; sourceTree = "<group>"; };
 		91B8B0332CF8454F00365904 /* fire_detection.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fire_detection.pb.swift; sourceTree = "<group>"; };
 		91B8B03A2CF85D5400365904 /* sample.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.mp4; sourceTree = "<group>"; };
+		D61122122CFA9BE20040AD8C /* VideoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				91B2911F2CF81CD60035D87D /* HomeCamProjectApp.swift */,
 				91B291212CF81CD60035D87D /* ContentView.swift */,
 				91B8B0302CF83D9200365904 /* ConnectView.swift */,
+				D61122122CFA9BE20040AD8C /* VideoContentView.swift */,
 				91B291232CF81CD80035D87D /* Assets.xcassets */,
 				91B8B03A2CF85D5400365904 /* sample.mp4 */,
 				91B291252CF81CD80035D87D /* Preview Content */,
@@ -177,6 +180,7 @@
 				91B291222CF81CD60035D87D /* ContentView.swift in Sources */,
 				91B8B0352CF8454F00365904 /* fire_detection.grpc.swift in Sources */,
 				91B291202CF81CD60035D87D /* HomeCamProjectApp.swift in Sources */,
+				D61122132CFA9BE20040AD8C /* VideoContentView.swift in Sources */,
 				91B8B0362CF8454F00365904 /* fire_detection.pb.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
