@@ -12,7 +12,7 @@ import GRPC
 struct HomeCamProjectApp: App {
     var body: some Scene {
         WindowGroup {
-            VideoContentView()
+            ConnectView()
         }
     }
 }

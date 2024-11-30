@@ -3,8 +3,8 @@ from concurrent import futures
 import torch
 import cv2
 import numpy as np
-from proto import fire_detection_pb2
-from proto import fire_detection_pb2_grpc
+import proto.fire_detection_pb2 as fire_detection_pb2
+import proto.fire_detection_pb2_grpc as fire_detection_pb2_grpc
 import time
 import ssl
 
