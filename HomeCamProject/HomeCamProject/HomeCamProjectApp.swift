@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import GRPC
 
 @main
 struct HomeCamProjectApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            ConnectView()
         }
     }
 }
