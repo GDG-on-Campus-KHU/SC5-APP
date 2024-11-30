@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import GRPC
 
 struct ContentView: View {
     var body: some View {
@@ -54,10 +55,10 @@ struct CameraListView: View {
                 List(cameras, id: \.0) { camera in
                     NavigationLink(destination: CameraDetailView(cameraName: camera.0)) {
                         HStack {
-                            Image(camera.1)
-                                .resizable()
-                                .frame(width: 100, height: 60)
-                                .cornerRadius(8)
+//                            Image(camera.1)
+//                                .resizable()
+//                                .frame(width: 100, height: 60)
+//                                .cornerRadius(8)
                             Text(camera.0)
                                 .font(.headline)
                             Spacer()

@@ -11,6 +11,13 @@
 		91B291222CF81CD60035D87D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B291212CF81CD60035D87D /* ContentView.swift */; };
 		91B291242CF81CD80035D87D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91B291232CF81CD80035D87D /* Assets.xcassets */; };
 		91B291272CF81CD80035D87D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91B291262CF81CD80035D87D /* Preview Assets.xcassets */; };
+		91B8B02B2CF83C6200365904 /* CGRPCZlib in Frameworks */ = {isa = PBXBuildFile; productRef = 91B8B02A2CF83C6200365904 /* CGRPCZlib */; };
+		91B8B02D2CF83C6200365904 /* GRPC in Frameworks */ = {isa = PBXBuildFile; productRef = 91B8B02C2CF83C6200365904 /* GRPC */; };
+		91B8B02F2CF83C6200365904 /* GRPCReflectionService in Frameworks */ = {isa = PBXBuildFile; productRef = 91B8B02E2CF83C6200365904 /* GRPCReflectionService */; };
+		91B8B0312CF83D9200365904 /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B8B0302CF83D9200365904 /* ConnectView.swift */; };
+		91B8B0352CF8454F00365904 /* fire_detection.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B8B0322CF8454F00365904 /* fire_detection.grpc.swift */; };
+		91B8B0362CF8454F00365904 /* fire_detection.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B8B0332CF8454F00365904 /* fire_detection.pb.swift */; };
+		91B8B03B2CF85D5400365904 /* sample.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 91B8B03A2CF85D5400365904 /* sample.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,10 @@
 		91B291212CF81CD60035D87D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		91B291232CF81CD80035D87D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91B291262CF81CD80035D87D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		91B8B0302CF83D9200365904 /* ConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectView.swift; sourceTree = "<group>"; };
+		91B8B0322CF8454F00365904 /* fire_detection.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fire_detection.grpc.swift; sourceTree = "<group>"; };
+		91B8B0332CF8454F00365904 /* fire_detection.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fire_detection.pb.swift; sourceTree = "<group>"; };
+		91B8B03A2CF85D5400365904 /* sample.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +37,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91B8B02F2CF83C6200365904 /* GRPCReflectionService in Frameworks */,
+				91B8B02D2CF83C6200365904 /* GRPC in Frameworks */,
+				91B8B02B2CF83C6200365904 /* CGRPCZlib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +65,12 @@
 		91B2911E2CF81CD60035D87D /* HomeCamProject */ = {
 			isa = PBXGroup;
 			children = (
+				91B8B0342CF8454F00365904 /* proto */,
 				91B2911F2CF81CD60035D87D /* HomeCamProjectApp.swift */,
 				91B291212CF81CD60035D87D /* ContentView.swift */,
+				91B8B0302CF83D9200365904 /* ConnectView.swift */,
 				91B291232CF81CD80035D87D /* Assets.xcassets */,
+				91B8B03A2CF85D5400365904 /* sample.mp4 */,
 				91B291252CF81CD80035D87D /* Preview Content */,
 			);
 			path = HomeCamProject;
@@ -66,6 +83,16 @@
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
+		};
+		91B8B0342CF8454F00365904 /* proto */ = {
+			isa = PBXGroup;
+			children = (
+				91B8B0322CF8454F00365904 /* fire_detection.grpc.swift */,
+				91B8B0332CF8454F00365904 /* fire_detection.pb.swift */,
+			);
+			name = proto;
+			path = HomeCamProject/proto;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -83,6 +110,11 @@
 			dependencies = (
 			);
 			name = HomeCamProject;
+			packageProductDependencies = (
+				91B8B02A2CF83C6200365904 /* CGRPCZlib */,
+				91B8B02C2CF83C6200365904 /* GRPC */,
+				91B8B02E2CF83C6200365904 /* GRPCReflectionService */,
+			);
 			productName = HomeCamProject;
 			productReference = 91B2911C2CF81CD60035D87D /* HomeCamProject.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +143,9 @@
 				Base,
 			);
 			mainGroup = 91B291132CF81CD60035D87D;
+			packageReferences = (
+				91B8B0292CF83C6200365904 /* XCRemoteSwiftPackageReference "grpc-swift" */,
+			);
 			productRefGroup = 91B2911D2CF81CD60035D87D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91B291272CF81CD80035D87D /* Preview Assets.xcassets in Resources */,
+				91B8B03B2CF85D5400365904 /* sample.mp4 in Resources */,
 				91B291242CF81CD80035D87D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91B8B0312CF83D9200365904 /* ConnectView.swift in Sources */,
 				91B291222CF81CD60035D87D /* ContentView.swift in Sources */,
+				91B8B0352CF8454F00365904 /* fire_detection.grpc.swift in Sources */,
 				91B291202CF81CD60035D87D /* HomeCamProjectApp.swift in Sources */,
+				91B8B0362CF8454F00365904 /* fire_detection.pb.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +383,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		91B8B0292CF83C6200365904 /* XCRemoteSwiftPackageReference "grpc-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/grpc/grpc-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.24.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		91B8B02A2CF83C6200365904 /* CGRPCZlib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91B8B0292CF83C6200365904 /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			productName = CGRPCZlib;
+		};
+		91B8B02C2CF83C6200365904 /* GRPC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91B8B0292CF83C6200365904 /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			productName = GRPC;
+		};
+		91B8B02E2CF83C6200365904 /* GRPCReflectionService */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91B8B0292CF83C6200365904 /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			productName = GRPCReflectionService;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 91B291142CF81CD60035D87D /* Project object */;
 }

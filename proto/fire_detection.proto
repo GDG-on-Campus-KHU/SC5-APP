@@ -3,7 +3,7 @@ syntax = "proto3";
 
 package firedetection;
 
-option go_package = "./pb";
+option go_package = "./pb"; 
 option swift_prefix = "FD";
 
 service FireDetectionService {
