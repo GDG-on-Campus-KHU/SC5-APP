@@ -15,13 +15,6 @@
 
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/32bf8d84-d471-4b08-8931-c4ca42c4ba61" />
 
-
-<br>
-
-## **3. 프로그램 소개**
-
-https://github.com/user-attachments/assets/072093e9-e317-411e-a6e3-fdf7f1293087
-
 ### **1) Application Client**
 
 - SwiftUI 프레임워크 활용
@@ -40,6 +33,13 @@ https://github.com/user-attachments/assets/072093e9-e317-411e-a6e3-fdf7f1293087
 - 실시간 객체 탐지에 적합한 딥러닝 모델
     - 실시간 물체 탐지 기능: input 영상을 frame 단위로 분할한 뒤 각 이미지에서 목표를 탐지
 - python으로 학습 및 사용
+
+<br>
+
+## **3. 시연 영상**
+
+https://github.com/user-attachments/assets/072093e9-e317-411e-a6e3-fdf7f1293087
+
 
 <br>
 
