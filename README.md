@@ -14,8 +14,9 @@
 
 ## **3. 프로그램 소개**
 
-### **1) Application CLient**
-<img width="444" alt="image" src="https://github.com/user-attachments/assets/c59e0dd9-5866-423c-9aac-924e38bd57d4" />
+https://github.com/user-attachments/assets/072093e9-e317-411e-a6e3-fdf7f1293087
+
+### **1) Application Client**
 
 - SwiftUI 프레임워크 활용
     - GUI 및 백엔드와 연결
