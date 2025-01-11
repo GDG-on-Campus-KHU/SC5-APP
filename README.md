@@ -47,4 +47,4 @@ https://github.com/user-attachments/assets/072093e9-e317-411e-a6e3-fdf7f1293087
 
 - [Mobile] Swift
 - [BackEnd] Go + Python
-- [AI] volov5 (Python)
+- [AI] yolov5 (Python)
